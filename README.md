@@ -1,8 +1,8 @@
 # Flutter Team Project
 
-팀 프로젝트 결과 보고서
+UI/UX 프로그래밍
 
-## Getting Started
+## 팀 프로젝트 결과 보고서
 
 This project is a starting point for a Flutter application.
 
