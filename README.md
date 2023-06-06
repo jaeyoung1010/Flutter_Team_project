@@ -4,13 +4,22 @@ UI/UX 프로그래밍
 
 ## 팀 프로젝트 결과 보고서
 
-This project is a starting point for a Flutter application.
+1.프로그램 개요 및 설명
+-대한민국에서 가장 선호하는 여행지 중 하나인 제주도에 대한 정보가 담긴 여행 정보 앱을 개발합니다.
+-관광지,식당,핫플레이스와 같은 장소들은 하드코딩으로 기능을 구현합니다. 
+-렌트카 업체 정보는 제주데이터허브에서 Project Key값을 사용하여 구현합니다 -날씨 정보는 WebView 기능을 사용하여 앱을 구현합니다.
 
-A few resources to get you started if this is your first Flutter project:
+2.전체 구조도 설명
+주요 패키지
+-url_Launcher:Flutter 앱에서 URL을 열고 실행하는 데 사용되는 패키지, 웹페이지 이메일, 전화 등의 URL을 처리할 수 있으며 제주도 관광 프로젝트에서는 웹 페이지를 여는 용도로 사용됩니다.
+-http:http 패키지를 현재 파일에서 사용하기 위해 가져오기 위해 사용, 프로젝트에서는 http.get 함수를 사용, http.Response 라는 객체를 받아오기 위해 사용됩니다. 
+-webview_flutter:Flutter 앱에서 WebView를 사용하기 위해 가져온 패키지 프로젝트에서는 기상 사이트를 webview로 표시하기 위해서 사용됩니다.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+주요 클래스
+-MyApp 클래스: 플러터의 기본 클래스로 앱의 최상위 위젯을 정의하는 클래스입니다. 메인화면을 구성하고 앱 전반적인 기능을 구현합니다.
+-AppColor 클래스: 앱 내부 UI의 색상을 정의하는 클래스입니다.
+-PrimaryText 클래스: 앱에 사용되는 텍스트들에 대한 속성을 지정해주는 클래스입니다.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+3.주요 기능 설명
+-url_launcher을 이용하여 렌트카 업체 정보 로드 기능 
+-webview을 이용하여 실시간 제주도 날씨 로드 기능
